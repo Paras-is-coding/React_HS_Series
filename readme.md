@@ -19,3 +19,18 @@
     - public/ -> public files/images
     - src/ -> App.jsx and main.jsx similar to create-react-app ones
     - npm run dev -> run project in dev environment
+
+# Flow 
+- index.html -> This is page which will load Single Page Application(SPA)
+- index.js -> entry point of react
+    - ReactDom -> react makes it's virtual dom and compares with main dom and populates changes onlyS
+    - create ReactDom at 'root' element at index.html
+    - render <App/> at that DOM 
+- App.js -> Is react component where we can write jsx
+- We always have to load JS inside html to make it work 
+    question? how index.js is being loaded to index.html 
+        -> 'react-scripts' package does that behind the scene usig create-react-app 
+        -> vite directly adds script tag
+- We create components/ and render them to App.jsx directly or indirectly
+    - component name start with capital eg Header.js / Header.jsx (in vite)
+    - then we export(default / named) and import(where we use)
