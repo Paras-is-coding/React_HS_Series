@@ -34,3 +34,26 @@
 - We create components/ and render them to App.jsx directly or indirectly
     - component name start with capital eg Header.js / Header.jsx (in vite)
     - then we export(default / named) and import(where we use)
+
+
+## Creating basic Custom react app
+- index.html with <div id="root"> , add main.js file here 
+
+- main.js > select div and render react component in that div
+
+- how react renders component?
+    - React makes tree kind of structure if every reactElement to evaluate it
+    - And use a function to create domElement of reactElement and render it
+    - EG : here I've created structure of a <a>(link) element
+
+- However a bundler for e/g vite, transpiles jsx to the format that react
+    understands as above mentioned 
+    - eg: <App /> is App() function call and the jsx it returns is transpiled to object/tree which is then passed to render() function
+    - So we can simply pass reactElement obj to render?
+        -  Yes but the key:, render expects may be diff. Though you can use React.createElement('ele',{attributes},'children',evExpressions) to create ele. and pass to render
+
+- Inside jsx using {variable} we can populate evaluated expressions of JS
+
+- This is basics of react, there's a lot optimization done by bundlers
+
+
