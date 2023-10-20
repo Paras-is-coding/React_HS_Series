@@ -14,4 +14,8 @@
     - package.json -> consists dependencies, start scripts and more
     - package-lock.json -> consits dep. of depend and their version
     
-
+- In react app using vite :
+    - npm i -> to create node_modules
+    - public/ -> public files/images
+    - src/ -> App.jsx and main.jsx similar to create-react-app ones
+    - npm run dev -> run project in dev environment
