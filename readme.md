@@ -86,3 +86,13 @@
 
 - IMPT: Diffing of lists is performed using keys. Keys should be "stable,predictable and unique" 
     - So to make fiber algo effective we use keys while populating array ele. into lists and etc
+
+
+
+## Props in reactjs and Tailwind
+- Props _ properties in object passed to components as argument 
+    - Eg. <Card heading="" body=""/>   here heading and body are property added to props
+        - <Card details={car1Details1}/> we can add objects and arrays to that object as well 
+    - In Card component we get props obj like this _ Card(props) _ & access like this(props.heading)
+        - we can get individual properties as well _ Card({heading,body})
+- tailwind css setup is easy look at react site for setup 
