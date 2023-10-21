@@ -64,3 +64,25 @@
     - const [variable, setVariable] = useState()
 - now change in state of variable will be reflected everywhere it's used in UI
 
+
+## Virtual DOM, Fibre and reonciliation
+
+- ReactDOM.createRoot() method creates virtualDOM, When data in a React application changes, a new
+ Virtual DOM tree is created and compared to the previous one. The differences are identified,
+  and only those changes are applied to the real DOM.
+
+- BUT for in Network calls, state change frequently so algo is optimized to wait for few time/skip some steps/...    instead of rendering frequent changes 
+
+- React is not using virtual DOM(React core algo to update UI) these days instead optimized one is Used. 
+
+- Reconciliation > Is recursive algo that React uses to diff two trees and reconsider which part to be changed. Reconciliation is the process by which React updates the actual DOM to reflect
+ changes made to the Virtual DOM. 
+
+- React Fiber > improved reconciliation algo. of React to update UI. Makes able to 
+    - pause work and come back to it later
+    - assign priority
+    - reuse previously completed work
+    - abort work if it's no longer needed
+
+- IMPT: Diffing of lists is performed using keys. Keys should be "stable,predictable and unique" 
+    - So to make fiber algo effective we use keys while populating array ele. into lists and etc
