@@ -57,3 +57,10 @@
 - This is basics of react, there's a lot optimization done by bundlers
 
 
+## Why you need hooks and project
+- counter > ADD button inc. val of counter var, but not populated in UI
+- React controls UI updation, we use hooks for that / import {hookName} from 'react'
+- useState > responsible to propogate change in state into UI
+    - const [variable, setVariable] = useState()
+- now change in state of variable will be reflected everywhere it's used in UI
+
