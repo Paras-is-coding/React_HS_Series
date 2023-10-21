@@ -96,3 +96,21 @@
     - In Card component we get props obj like this _ Card(props) _ & access like this(props.heading)
         - we can get individual properties as well _ Card({heading,body})
 - tailwind css setup is easy look at react site for setup 
+
+# A react interview question on counter 
+- suppose:
+ addValue(){
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+    setCounter(counter + 1);
+}
+ - here counter will be increased by one 1 as we are updating same 'counter' variable
+
+- Do this:
+ addValue(){
+    setCounter( prevCounter => prevCounter + 1)
+    setCounter( prevCounter => prevCounter + 1)
+    setCounter( prevCounter => prevCounter + 1)
+}
+- now 'counter' will be increase by 3 as in callback
+    inside setCounter, prevCounter holds last updated state of 'counter'
