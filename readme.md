@@ -114,3 +114,11 @@
 }
 - now 'counter' will be increase by 3 as in callback
     inside setCounter, prevCounter holds last updated state of 'counter'
+
+
+## bgChanger
+- Adding background changer to 03talwind-props project
+- created buttons and added onClick where we are changing color variable through a callback 
+- Why callback and not directly onClick={setColor("")}? 
+    - onClick expects function but we can't pass parameters(if we did soo function will be directly executed and onClick will get its return value )
+    - But we don't want return value instead function 

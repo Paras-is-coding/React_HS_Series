@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Card(props) {
   return (
-    <div className="mx-auto pt-8 max-w-sm rounded overflow-hidden shadow-lg">
+    <div className="mx-auto pt-8 max-w-sm bg-gray-200  rounded overflow-hidden shadow-lg">
   <img className="w-full" src={props.cardDetails.imgSrc} alt="Sunset in the mountains" />
   <div className="px-6 py-4">
     <div className="font-bold text-xl mb-2">{props.cardDetails.heading}</div>
