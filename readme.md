@@ -123,6 +123,36 @@
     - onClick expects function but we can't pass parameters(if we did soo function will be directly executed and onClick will get its return value )
     - But we don't want return value instead function 
 
+## useEffect, useRef and useCallback with project 
+ - project is password generator 
+        - state variables _ length,numberAllowed,charAllowed,password
+        - method to generate password _ passwordGenerator 
 
-    ## useEffect, useRef and useCallback with project 
-   
+    # put passwordGenerator method and it's dependencies in cache memory / useCallback
+    - useCallback is used for memoizing functions to optimize performance. It returns a 
+        memoized version of the function that only changes when its dependencies change.
+        - const passwordGenerator = useCallback(()=>{},[dependencies])
+        - any change in dependencies will optimize method to re_run it
+
+    # call passwordGenerator using useEffect on any change in dependencies
+    - ONE way create button and add onClick in it
+    - another use useEffect hook to call it initially when page loads then whenever dependencies change
+
+    - useEffect is used for managing side effects in your components.
+        Side effects can include data fetching, DOM manipulation, or subscribing to external data sources.
+        - useEffect(()=>{passwordGenerator()},[dependencies]) 
+        - any change in dependencies will re_run the method
+        
+
+    - Now make UI and change state variables using onChange in input fields
+
+    - useEffect is primarily used for managing side effects, while useCallback is used to optimize the performance of functions by memoizing them. 
+
+    # useRef
+    - If we want to keep reference of any element and manipulate we use this hook
+    - Here to copy password: 
+        - const passwordRef = useRef(null) _ make reference variable
+        - <input ref={passwordRef}>        _ take reference of that input field in variable
+        - <button onClick={copyPasswordToClipboard}> _ use this function now
+            - we could directly copy value of 'password'
+            - using useRef we could add effects and other manipulations while copying
