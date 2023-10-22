@@ -156,3 +156,7 @@
         - <button onClick={copyPasswordToClipboard}> _ use this function now
             - we could directly copy value of 'password'
             - using useRef we could add effects and other manipulations while copying
+
+
+
+## Custom hooks in react | currrency project
