@@ -178,3 +178,6 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 - In app.jsx we use custom hook and make the UI using InputBox component
 - NOTE: you can make index.js inside components/ and import all components there and export from there for easy access
 
+
+
+## React router with a project
