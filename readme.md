@@ -192,3 +192,4 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
     - inside main.jsx remove <App/> and add <RouterProvider router={router}/> and make routes using _  router = createBrowserRouter([{}]) 
     - inside App.jsx write the layout for eg <> <Header/> <Outlet/> <Footer/> </>
     
+- Dynamic route handeleling and getting params from dynamic URL
