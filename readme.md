@@ -181,3 +181,4 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 
 
 ## React router with a project
+- Added ready made components with styling here I've used Link/NavaLink in place of anchor tag
