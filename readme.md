@@ -193,7 +193,19 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
     - inside App.jsx write the layout for eg <> <Header/> <Outlet/> <Footer/> </>
     
 - Dynamic route handeleling and getting params from dynamic URL
+    - <Route path='user/:userId' element={<User/>}>
+    - get userId inside <User/> page using _  useParams hook
 
 - Adding Github page to add our github profile data into page
     - using useEffect() hook to fetch data whenever page mounts/loads
     - https://api.github.com/users/Paras-is-coding    _ URL for API call
+
+    - Now we'll do our API call(fetch) using loader prop in <Route /> , this feature
+         will fetch data before our useEffect() does i.e when we put cursor in page link
+        - It's more optimized way data will load faster
+        - make function to fetch data which returns res.json() promise
+        - add function in loader
+        - use useLoaderData hook to access the data and then use it 
+    - Notice that now data loading is faster when you load github page
+
+- There are way more features in react router added to explore ---

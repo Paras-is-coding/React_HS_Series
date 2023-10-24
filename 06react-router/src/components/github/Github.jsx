@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react'
+import { useLoaderData } from 'react-router-dom';
 
 export default function Github() {
-    const [data,setData] = useState([]);
-    useEffect(()=>{
-        fetch("https://api.github.com/users/Paras-is-coding")
-        .then((res)=> res.json())
-        .then((data)=>{
-            console.log(data);
-            setData(data);
-        })
-    },[])
+    const data = useLoaderData();
+    // const [data,setData] = useState([]);
+    // useEffect(()=>{
+    //     fetch("https://api.github.com/users/Paras-is-coding")
+    //     .then((res)=> res.json())
+    //     .then((data)=>{
+    //         console.log(data);
+    //         setData(data);
+    //     })
+    // },[])
   return (<>
     <div className=' text-center p-4 max-h-20 bg-slate-800 text-white text-4xl'>Github Followers : {data.followers}</div>
     <div className='flex justify-around'>
@@ -24,4 +26,10 @@ export default function Github() {
     </div>
     </>
   )
+}
+
+
+export const  githubInfoLoader =  async () =>{
+    const res = await fetch("https://api.github.com/users/Paras-is-coding");
+    return res.json();
 }
