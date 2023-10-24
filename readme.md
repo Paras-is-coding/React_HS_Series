@@ -182,3 +182,13 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 
 ## React router with a project
 - Added ready made components with styling here I've used Link/NavaLink in place of anchor tag
+- npm i react-router-dom _ another package for routing in react
+
+- import{Link,NavLink} from 'react-router-dom'
+    - <Link to='/route'> _ replacement of <a> tag also it doesnot reload the page as anchor does
+    - <NavLink> _ alike <Link> with some additional features
+
+- NOW
+    - inside main.jsx remove <App/> and add <RouterProvider router={router}/> and make routes using _  router = createBrowserRouter([{}]) 
+    - inside App.jsx write the layout for eg <> <Header/> <Outlet/> <Footer/> </>
+    
