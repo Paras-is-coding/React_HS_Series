@@ -193,3 +193,7 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
     - inside App.jsx write the layout for eg <> <Header/> <Outlet/> <Footer/> </>
     
 - Dynamic route handeleling and getting params from dynamic URL
+
+- Adding Github page to add our github profile data into page
+    - using useEffect() hook to fetch data whenever page mounts/loads
+    - https://api.github.com/users/Paras-is-coding    _ URL for API call
