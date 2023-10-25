@@ -270,3 +270,7 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 - context/index.js _ It's optional we can export all contexts from this file for easy import later
 
 - Now add UI of TodoIteam, TodoForm & App component as well
+
+- Now add TodoProvider to App component and exract data from context
+    - define [todos,setTodos] = useState([] )
+    - also define all functions of context in App.jsx 
