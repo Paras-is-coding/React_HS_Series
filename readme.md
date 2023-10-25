@@ -268,3 +268,5 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
     - Most of time we define function in App.jsx
     - So here we defined what methods and values are in the context
 - context/index.js _ It's optional we can export all contexts from this file for easy import later
+
+- Now add UI of TodoIteam, TodoForm & App component as well
