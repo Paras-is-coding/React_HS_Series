@@ -259,3 +259,12 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 
 
 ## Context API with local storage | todo app 
+- project setup using create vite@latest 
+- src/context/TodoContext.js  _ create context,provider&hook here
+    - while _  createContext({
+    todo:[array of todos],
+    addTodo:(todo)=>{} // and other method declarations only
+    })
+    - Most of time we define function in App.jsx
+    - So here we defined what methods and values are in the context
+- context/index.js _ It's optional we can export all contexts from this file for easy import later
