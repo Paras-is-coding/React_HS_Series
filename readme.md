@@ -282,4 +282,7 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 - Now we need not to worry about localstorage as we're gonna add todos remove todos in context
 
 - Also in TodoForm component we'll add todo using addTodo(todo) from context using useTodo() hook
- 
+
+- Adding updateTodo, deleteTodo and toggleCompleted functionality in TodoIteam.jsx component
+    - get those functions from context using useTodo()
+    - make changes in component CSS and elements accordingly
