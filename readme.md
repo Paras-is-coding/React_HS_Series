@@ -254,3 +254,8 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 - Now wrap App.jsx with <ThemeProvider values={{}}>
     - We can define functions of context here also with same name
 - Now use useTheme() custom hook in ThemeBtn to change themes
+
+
+
+
+## Context API with local storage | todo app 
