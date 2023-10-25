@@ -209,3 +209,14 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
     - Notice that now data loading is faster when you load github page
 
 - There are way more features in react router added to explore ---
+
+
+
+## ContextAPI
+- passing props to deeply nested comp. is done by passing through every outer components 
+- If we had some global storage, store and get when needed
+    - ContextAPI _ state management for React only
+    - Redux _ react-redux - redux-toolkit(RTK)
+    - zustand
+
+- now understanding working of context API
