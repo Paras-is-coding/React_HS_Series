@@ -220,3 +220,25 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
     - zustand
 
 - now understanding working of context API
+    - src/context/ 
+        - UserContext.js 
+            - const UserContext = React.createContext(), create context/ will give provider
+
+        - We'll wrap components with provider that want access of that 
+        
+        - UserContextProvider.jsx
+            - has function that gets props {children} ie any component
+             and display as it is , 
+            - wrapping it with <context.Provider value={{}}
+                with prop value to send data to component
+
+        - You can also take context and make provider in App.jsx
+
+    - NOW wrap the App.jsx or Main.jsx with provider and all components inside them will get access to the values/data in context
+
+    - components/Component.jsx
+    - storing data
+        - const {<setUser>} = useContext(<UserContext>)
+            - now using setUser store user info in context
+    - getting data 
+        - same _ const {user} = useContext(<UserContext>)

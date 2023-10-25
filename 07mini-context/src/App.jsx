@@ -1,8 +1,14 @@
 import React from 'react'
+import UserContextProvider from './context/UserContextProvider'
+import Login from './components/Login.jsx'
+import Profile from './components/Profile.jsx'
 
 export default function App(){
   return (
-    <div>Learning context API </div>
+    <UserContextProvider>
+      <Login/>
+      <Profile/>
+    </UserContextProvider>
   )
 }
 
