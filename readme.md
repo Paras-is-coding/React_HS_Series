@@ -243,6 +243,14 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
     - getting data 
         - same _ const {user} = useContext(<UserContext>)
 
-## context API themechanger project
+## context API themechanger project with diff. syntax 
 - setup 
 - added ThemeBtn and Card component UI
+- src/context/theme.js 
+    - Here we'll pass params to createContext({})
+    - also we'll make contextProvider in same file
+    - also we'll make custom hook that useContext this context
+        - now we don't have to import context and useContext in component where we are using context data
+- Now wrap App.jsx with <ThemeProvider values={{}}>
+    - We can define functions of context here also with same name
+- Now use useTheme() custom hook in ThemeBtn to change themes
