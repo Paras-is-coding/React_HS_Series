@@ -242,3 +242,7 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
             - now using setUser store user info in context
     - getting data 
         - same _ const {user} = useContext(<UserContext>)
+
+## context API themechanger project
+- setup 
+- added ThemeBtn and Card component UI
