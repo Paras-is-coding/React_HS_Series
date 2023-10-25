@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import {TodoProvider} from './context/index'
 
 export default function App() {
@@ -23,6 +23,18 @@ export default function App() {
     // find todo with id and overwrite & reverse value of completed
     setTodos((prev)=> prev.map((individualTodo)=> (individualTodo.id === id)?{...individualTodo,completed:!individualTodo.completed}:individualTodo))
   }
+
+
+  useEffect(()=>{
+    const todos = localStorage.getItem('todos');
+    if(todos && todos.length > 0){
+      setTodos(todos)
+    }
+  },[])
+
+  useEffect(()=>{
+    localStorage.setItem('todos',JSON.stringify(todos))
+  },[todos])
 
 
   return (

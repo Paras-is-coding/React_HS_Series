@@ -274,3 +274,9 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 - Now add TodoProvider to App component and exract data from context
     - define [todos,setTodos] = useState([] )
     - also define all functions of context in App.jsx 
+
+- Now working with Local storage _ stored in string format
+    - accessing & save todos when page load using useEffect
+    - using another useEffect(()=>{addtodos to LS},[todos])
+
+- Now we need not to worry about localstorage as we're gonna add todos remove todos in context
