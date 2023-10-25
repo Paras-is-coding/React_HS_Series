@@ -280,3 +280,6 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
     - using another useEffect(()=>{addtodos to LS},[todos])
 
 - Now we need not to worry about localstorage as we're gonna add todos remove todos in context
+
+- Also in TodoForm component we'll add todo using addTodo(todo) from context using useTodo() hook
+ 
