@@ -1,7 +1,12 @@
 import React from 'react'
+import AddTodo from './components/AddTodo'
+import Todos from './components/Todos'
 
 export default function App() {
-  return (
-    <div className=' p-4 bg-slate-400 text-center'>Getting startd for Todo using redux-toolkit</div>
+  return (<main className=' min-h-screen bg-blue-950 text-white'>
+            <AddTodo/>
+            <Todos/>
+          </main>
+   
   )
 }

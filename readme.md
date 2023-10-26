@@ -346,6 +346,26 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 
 
 
+4) WRAP WHOLE APP WITH PROVIDER widht store prop
+- import {Provider} from 'react-redux'
+- import {store} from 'storekoloc'
+- <Provider store={store}>
+	<App/>
+ </Provider>
+
+
+
+
+5) NOW USE STORE : Used in components -> there are two functions 
+	1) useSelector - used to get value from store -> gives us access to state(ie of store) and can use any values 
+	    USE : Just call -> eg todos = useSelector( (state) => state.todos)
+		 
+
+	2) useDispatch - dispatch use reducer to make change in store
+	    USE(3 steps) : -> import {addTodo,removeTodo}
+		       -> const dispatch = useDispatch() 
+		       -> dispatch(addTodo(passval))
+
 
 
 
