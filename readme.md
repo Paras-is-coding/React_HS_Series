@@ -296,6 +296,8 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 ## Redux
 - Context API came way later
 - Data flow is better in redux than ContextAPI (in data store and retrive) 
+    - remember we only wrote fun. dec in contextAPI here
+        in reducers/slices we write definition here only
 - Flux(by facebook) ->  Redux 
     - redux-toolkit _ battries included easy setup 
 
@@ -303,6 +305,44 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 - redux is a core library 
 - react-redux is its implementation(wiring) to communicate in betn react & redux
 - Redux Toolkit is a library that simplifies and streamlines the process of managing state in a Redux-based application
+
+
+
+## USING REDUX-TOOLKIT
+
+1) install @reduxjs/toolkit and react-redux
+
+
+2) CREATE STORE : redux/store.js 
+	> import {configureStore} and create store using it
+	> import reducers eg import todoReducer ... 
+	  and add to store eg configureStore({reducer:todoReducer})
+
+
+
+3) CREATE REDUCERS/SLICES : redux/features/ > eg todo / eg todoSlice.js
+	> import {createSlice} and create slice using it
+	> eg todoSlice = createSlice({ name:"",initialState:{},reducers:{})
+		-- name -> name of slice can be anything
+		-- initialState -> initial variable values
+		-- reducers -> functionalities
+         eg) addTodo : (state,action) =>{}
+			- state -> gives access to updated values in initialState/state
+			- action -> values passed when this method is called (as action.payload)
+
+	> export : done in two steps 
+		1) export every individual reducer 
+        // will be used in components
+			eg export const {addTodo,removeTodo} = todoSlices.actions    
+             
+		2) export all reducer
+        // used to aware store all reducers
+			eg export default todoSlice.reducer  			     
+
+
+
+// functions imported are from pure @reduxjs/toolkit
+// functions below are of react or wireup with redux(react-redux)
 
 
 
