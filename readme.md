@@ -286,3 +286,28 @@ let url = `https://cdn.jsdelivr.net/gh/fawazahmed0/currency-api@1/latest/currenc
 - Adding updateTodo, deleteTodo and toggleCompleted functionality in TodoIteam.jsx component
     - get those functions from context using useTodo()
     - make changes in component CSS and elements accordingly
+
+
+
+
+
+
+
+## Redux
+- Context API came way later
+- Data flow is better in redux than ContextAPI (in data store and retrive) 
+- Flux(by facebook) ->  Redux 
+    - redux-toolkit _ battries included easy setup 
+
+## REDUX-TOOLKIT
+- redux is a core library 
+- react-redux is its implementation(wiring) to communicate in betn react & redux
+- Redux Toolkit is a library that simplifies and streamlines the process of managing state in a Redux-based application
+
+
+
+
+
+
+
+		
