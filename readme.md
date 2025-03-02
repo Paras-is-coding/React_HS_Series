@@ -42,7 +42,7 @@
 - main.js > select div and render react component in that div
 
 - how react renders component?
-    - React makes tree kind of structure if every reactElement to evaluate it
+    - React makes tree kind of structure of every reactElement to evaluate it
     - And use a function to create domElement of reactElement and render it
     - EG : here I've created structure of a <a>(link) element
 
